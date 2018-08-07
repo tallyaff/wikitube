@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="http://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Music-icon.png">
+    <title>WikiTube</title>
+
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="header-container container flex space-between align-items column">
+            <div class="logo">Wiki<span>tube</span>
+                <img src="img/mus2.png" alt=""></div>
+            <form role="search">
+                <div class="search-control">
+                    <input class='search' type="search" name="q" placeholder="Search a video">
+                    <button type="button" class="btn-search" onclick="searchValue()">Search</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="all-content flex content-center column">
+    <nav>
+        <ul class="videos-list clean-list content-center">
+        </ul>
+    </nav>
+
+    <aside class="flex column">
+        <div class="selected-video flex"></div>
+        <ul class="wikipedia-result flex column">
+        </ul>
+    </aside>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
